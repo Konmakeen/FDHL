@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Website with PDF Download</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and general page setup */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #4CAF50; /* Green background */
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: #ffffff;
+            color: #4CAF50;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            position: fixed;
+            bottom: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Our Beautiful Website!</h1>
+        <p>Here you can find useful information and download the PDF document with just a click of a button. Enjoy exploring!</p>
+        <!-- Button to Download PDF -->
+        <a href="sample.pdf" class="btn" download>Download PDF</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by <a href="#">Your Company</a> | &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
