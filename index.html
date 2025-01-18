@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful Website with PDF Download</title>
+    <title>موقع الطلاب الخريجين</title>
     <style>
         /* Basic Reset */
         * {
@@ -15,69 +15,76 @@
         /* Body and general page setup */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
+            background-color: #f0f4f8; /* Light gray background */
             color: #333;
             height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            direction: rtl; /* Right-to-left text direction */
         }
 
         /* Hero Section */
         .hero {
-            background: #4CAF50; /* Green background */
-            color: white;
+            background: #2b3d49; /* Deep Blue background */
+            color: #fff;
             width: 100%;
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 20px;
+            font-weight: bold;
         }
 
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 30px;
             max-width: 600px;
-            line-height: 1.5;
+            line-height: 1.6;
+            font-weight: 300;
         }
 
         /* Button Styling */
         .btn {
-            background-color: #ffffff;
-            color: #4CAF50;
+            background-color: #ff7043; /* Coral Orange background */
+            color: white;
             padding: 15px 30px;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: bold;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            text-decoration: none;
             transition: all 0.3s ease;
         }
 
         .btn:hover {
-            background-color: #45a049;
-            color: white;
+            background-color: #e64a19; /* Darker coral on hover */
+            transform: translateY(-3px);
         }
 
         /* Footer */
         footer {
             position: fixed;
-            bottom: 10px;
+            bottom: 20px;
             text-align: center;
             font-size: 0.9rem;
-            color: #666;
+            color: #777;
         }
 
         footer a {
-            color: #4CAF50;
+            color: #2b3d49;
             text-decoration: none;
         }
 
@@ -90,15 +97,15 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Welcome to Our Beautiful Website!</h1>
-        <p>Here you can find useful information and download the PDF document with just a click of a button. Enjoy exploring!</p>
-        <!-- Button to Download PDF -->
-        <a href="2.pdf" class="btn" download>Download PDF</a>
+        <h1>مرحباً بكم في موقع الطلاب الخريجين!</h1>
+        <p>نحن مجموعة من الطلاب الخريجين الذين قاموا بتطوير هذه المجلة. تجدون هنا كل المعلومات المفيدة عن تجربتنا واهتماماتنا.</p>
+        <!-- Button to Read Magazine -->
+        <a href="magazine.pdf" class="btn" download>قراءة مجلتنا</a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>Created by <a href="#">Your Company</a> | &copy; 2025</p>
+        <p>تم الإنشاء بواسطة <a href="#">مجموعتنا الطلابية</a> | &copy; 2025</p>
     </footer>
 
 </body>
