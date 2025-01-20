@@ -1,0 +1,185 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #333;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Light tint overlay */
+        url('hero2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero-text {
+    color: #fff;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8), 0 0 25px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+    padding: 10px; /* Add some space around the text */
+    border-radius: 5px; /* Rounded corners for background */
+}
+
+.hero h1 {
+    font-size: 4rem; /* Larger font for the title */
+    margin-bottom: 15px;
+    font-weight: bold; /* Make the text bolder */
+}
+
+.hero p {
+    font-size: 1.7rem; /* Slightly bigger font size for better readability */
+}
+
+
+/* Majors Section */
+/* Majors Section */
+.majors {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    justify-content: center;
+    margin: 20px;
+    gap: 20px; /* More space between cards */
+    padding: 20px;
+}
+
+.card {
+    background-color: #333;
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Stronger shadow for more depth */
+    flex: 1; /* Distribute space equally */
+    max-width: 300px; /* Limit max width to prevent stretching */
+    text-align: center;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card h2 {
+    font-size: 1.5rem; /* Increase title size for prominence */
+    color: #fff; /* Darker color for better contrast */
+    margin-bottom: 15px;
+    font-weight: 600; /* Bold weight for better readability */
+}
+
+
+
+
+/* PDF Download Button */
+.download {
+    
+    margin: 30px; /* Slightly larger space around the button */
+    text-align: center; /* Center the button */
+}
+
+/* Button Style */
+.btn {
+    background-color: #045fbf; /* Main color */
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px; /* Increase padding for a larger button */
+    border-radius: 50px; /* Round button for modern look */
+    font-size: 1.1rem; /* Slightly bigger text */
+    display: inline-block;
+    font-weight: bold; /* Bold text for emphasis */
+    text-align: center; /* Center the text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition for all changes */
+}
+
+/* Hover Effect */
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-5px); /* Lift the button slightly on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Increase shadow for depth */
+}
+
+/* Active State */
+.btn:active {
+    transform: translateY(2px); /* Slightly push down on click */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow on click */
+}
+
+/* Focus State */
+.btn:focus {
+    outline: none; /* Remove outline on focus */
+    border: 2px solid #0056b3; /* Add a border on focus for accessibility */
+}
+
+
+
+
+.footer {
+    text-align: center;
+    margin-top: 250px;
+    font-size: 0.8rem; /* Small text size */
+    color: #666; /* Subtle text color */
+}
+
+.footer a {
+    color: #007BFF; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .majors {
+        flex-direction: row; /* Ensure cards are side-by-side */
+        flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
+        justify-content: center; /* Center align cards */
+        
+    }
+
+    .card {
+        max-width: 48%; /* Allow cards to be 48% of the container width */
+        margin: 10px; /* Add margin between the cards */
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+    .card h2 {
+        font-size: 1rem;
+    }
+}
